@@ -1,0 +1,47 @@
+---
+# Language type: C++
+Language: Cpp
+
+# Based on the official Microsoft code style
+BasedOnStyle: Microsoft
+
+# Indentation settings
+IndentWidth: 4          # Indent width is 4 spaces
+TabWidth: 4             # Tab width is 4
+UseTab: Never           # Do not use tabs; use spaces for indentation
+ContinuationIndentWidth: 4  # Continuation line indent width
+
+# Brace style: Allman (left brace on a new line, typical Microsoft/Visual Studio style)
+BreakBeforeBraces: Allman
+
+# Access modifier (public/private/protected) indent offset; -4 aligns with class without extra indentation
+AccessModifierOffset: -4
+
+# Line width limit: 120 characters (common in enterprise development for readability and screen adaptation)
+ColumnLimit: 120
+
+# Whether short statements are allowed on a single line
+AllowShortIfStatementsOnASingleLine: false   # Force if statements to break
+AllowShortLoopsOnASingleLine: false          # Force loops to break
+AllowShortFunctionsOnASingleLine: Empty      # Only empty function bodies allowed on a single line
+
+# Alignment after open bracket: do not align, use ContinuationIndentWidth after line break
+AlignAfterOpenBracket: DontAlign
+
+# Pointer/reference alignment: left-aligned (int* p; instead of int *p;)
+PointerAlignment: Left
+
+# Header include sorting: do not sort automatically (enterprise projects often manage include order manually)
+SortIncludes: Never
+
+# Namespace indentation: do not indent contents
+NamespaceIndentation: None
+
+# Fix namespace end comments (e.g., } // namespace xxx)
+FixNamespaceComments: true
+
+# Number of spaces before trailing comments
+SpacesBeforeTrailingComments: 2
+
+# Standard: auto-detect
+Standard: Auto
